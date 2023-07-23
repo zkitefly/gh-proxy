@@ -103,6 +103,12 @@
         content: '合法输入示例：';
         color: #7b7b7b
     }
+    .other > p:first-child::before {
+        position: absolute;
+        left: -7.5em;
+        content: '备用站点：';
+        color: #7b7b7b
+    }
 </style>
 <head>
     <meta charset="utf-8">
@@ -128,12 +134,26 @@
     <input class="block btn" type="submit" value="下载">
     <div class="tips"><p>GitHub 文件链接带不带协议头都可以，支持 Release、Archive 以及 Raw ，右键复制出来的链接都是符合标准的，更多用法、Clone 加速请参考 <a href="https://hunsh.net/archives/23/">这篇文章</a>。</p>
         <p>Release、Archive 以及 Raw 等均使用 Replit 加速。注意！不支持项目文件夹。</p>
+        <p>因为 Replit 免费版限制，若长时间未活动，则会进入休眠状态，当再次有 Http 请求时，需要最长 1 分钟的唤醒时间，此时请等待。</p>
         <p>如果想加速本站不支持的的网页链接或下载链接，你可以使用 https://rp.zkitefly.eu.org/ + [你要加速的链接] 的组合访问链接。</p>
         <p>例如 https://rp.zkitefly.eu.org/https://google.com 、https://rp.zkitefly.eu.org/https://speed.hetzner.de/1GB.bin</p></div>
     <div class="example">
         <p>分支、Raw 文件：https://github.com/zkitefly/TranslationPackMirror/raw/main/filename 、https://github.com/zkitefly/TranslationPackMirror/blob/main/filename</p>
         <p>分支、Release 源码：https://github.com/zkitefly/TranslationPackMirror/archive/refs/tags/v1.0.0.tar.gz 、https://github.com/zkitefly/TranslationPackMirror/archive/main.zip</p>
         <p>Release 文件：https://github.com/zkitefly/TranslationPackMirror/releases/download/v1.0.0/example.zip</p>
+    </div>
+    <div class="other">
+        <p>因为 Replit 免费版带宽有限，因此又专门开了几个，如果当前站点速度慢，可以更换下面的</p>
+        <p>Root：<a href="https://rgp.zkitefly.eu.org/">https://rgp.zkitefly.eu.org/</a></p>
+        <p>1：<a href="https://rgp1.zkitefly.eu.org/">https://rgp1.zkitefly.eu.org/</a></p>
+        <p>2：<a href="https://rgp2.zkitefly.eu.org/">https://rgp2.zkitefly.eu.org/</a></p>
+        <p>3：<a href="https://rgp3.zkitefly.eu.org/">https://rgp3.zkitefly.eu.org/</a></p>
+        <p>4：<a href="https://rgp4.zkitefly.eu.org/">https://rgp4.zkitefly.eu.org/</a></p>
+        <p>5：<a href="https://rgp5.zkitefly.eu.org/">https://rgp5.zkitefly.eu.org/</a></p>
+        <p>6：<a href="https://rgp6.zkitefly.eu.org/">https://rgp6.zkitefly.eu.org/</a></p>
+        <p>7：<a href="https://rgp7.zkitefly.eu.org/">https://rgp7.zkitefly.eu.org/</a></p>
+        <p>8：<a href="https://rgp8.zkitefly.eu.org/">https://rgp8.zkitefly.eu.org/</a></p>
+        <p>9：<a href="https://rgp9.zkitefly.eu.org/">https://rgp9.zkitefly.eu.org/</a></p>
     </div>
 </form>
 <p style="position: sticky;top: calc(100% - 2.5em);">本站基于 Replit 和可在 Replit 中运行 Cloudflare Workers 代码的<a href="https://replit.com/@Cloudflare/Cloudflare-Workers">项目</a>，Cloudflare Workers 代码开源于 GitHub <a href="https://github.com/hunshcn/gh-proxy">hunshcn/gh-proxy</a>
